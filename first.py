@@ -18,22 +18,26 @@ root.maxsize(1200, 1000)
 
 # ======================================================
 # BUTTONS
+
+
 def hello():
     print("Hello")
-frame = Frame(root, borderwidth = 6, bg = "grey", relief = RIDGE)
-frame.pack(side = LEFT, anchor = "nw")
 
-b1 = Button(frame, fg = "red", text = "Click me", command = hello)
-b1.pack(side = "left", padx = 23)
 
-b2 = Button(frame, fg = "red", text = "Click me")
-b2.pack(side = "left", padx = 23)
+frame = Frame(root, borderwidth=6, bg="grey", relief=RIDGE)
+frame.pack(side=LEFT, anchor="nw")
 
-b3 = Button(frame, fg = "red", text = "Click me")
-b3.pack(side = "left", padx = 23)
+b1 = Button(frame, fg="red", text="Click me", command=hello)
+b1.pack(side="left", padx=23)
 
-b4 = Button(frame, fg = "red", text = "Click me")
-b4.pack(side = "left", padx = 23)
+b2 = Button(frame, fg="red", text="Click me")
+b2.pack(side="left", padx=23)
+
+b3 = Button(frame, fg="red", text="Click me")
+b3.pack(side="left", padx=23)
+
+b4 = Button(frame, fg="red", text="Click me")
+b4.pack(side="left", padx=23)
 
 # # ======================================================
 # # FRAMES
