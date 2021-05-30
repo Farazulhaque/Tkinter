@@ -16,19 +16,42 @@ root.minsize(300, 100)
 # width, height
 root.maxsize(1200, 1000)
 
-f1 = Frame(root, bg="grey", borderwidth=6, relief=SUNKEN)
-f1.pack(side=LEFT, fill="y")
+# ======================================================
+# BUTTONS
+def hello():
+    print("Hello")
+frame = Frame(root, borderwidth = 6, bg = "grey", relief = RIDGE)
+frame.pack(side = LEFT, anchor = "nw")
 
-f2 = Frame(root, borderwidth=8, bg="grey", relief=SUNKEN)
-f2.pack(side=TOP, fill="x")
+b1 = Button(frame, fg = "red", text = "Click me", command = hello)
+b1.pack(side = "left", padx = 23)
 
-l = Label(f1, text="Project Tkinter - Notepad")
-l.pack(pady=42)
+b2 = Button(frame, fg = "red", text = "Click me")
+b2.pack(side = "left", padx = 23)
 
-l = Label(f2, text="Project Tkinter - Notepad",
-          font="Helvetica 16 bold", fg="red", pady=5)
-l.pack(pady=42)
-# # Important Label Options
+b3 = Button(frame, fg = "red", text = "Click me")
+b3.pack(side = "left", padx = 23)
+
+b4 = Button(frame, fg = "red", text = "Click me")
+b4.pack(side = "left", padx = 23)
+
+# # ======================================================
+# # FRAMES
+# f1 = Frame(root, bg="grey", borderwidth=6, relief=SUNKEN)
+# f1.pack(side=LEFT, fill="y")
+
+# f2 = Frame(root, borderwidth=8, bg="grey", relief=SUNKEN)
+# f2.pack(side=TOP, fill="x")
+
+# l = Label(f1, text="Project Tkinter - Notepad")
+# l.pack(pady=42)
+
+# l = Label(f2, text="Project Tkinter - Notepad",
+#           font="Helvetica 16 bold", fg="red", pady=5)
+# l.pack(pady=42)
+
+# ======================================================
+# Important Label Options
 # bg = background
 # fg = foreground
 # font = sets the font
