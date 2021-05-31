@@ -17,27 +17,51 @@ root.minsize(300, 100)
 root.maxsize(1200, 1000)
 
 # ======================================================
+# Grid Layout
+def getvals():
+    print(f"The value of username is {uservalue.get()}")
+    print(f"The value of password is {passvalue.get()}")
+
+user = Label(root, text = "Username")
+password = Label(root, text = "Password")
+user.grid()
+password.grid(row=1)
+
+# Variable classes in Tkinter
+# BooleanVar, DoubleVar, IntVar, StringVar
+
+uservalue = StringVar()
+passvalue = StringVar()
+
+userentry = Entry(root, textvariable = uservalue)
+passentry = Entry(root, textvariable = passvalue)
+
+userentry.grid(row = 0, column = 1)
+passentry.grid(row = 1, column = 1)
+
+Button(text="Submit", command=getvals).grid()
+
+# ======================================================
 # BUTTONS
 
+# def hello():
+#     print("Hello")
 
-def hello():
-    print("Hello")
 
+# frame = Frame(root, borderwidth=6, bg="grey", relief=RIDGE)
+# frame.pack(side=LEFT, anchor="nw")
 
-frame = Frame(root, borderwidth=6, bg="grey", relief=RIDGE)
-frame.pack(side=LEFT, anchor="nw")
+# b1 = Button(frame, fg="red", text="Click me", command=hello)
+# b1.pack(side="left", padx=23)
 
-b1 = Button(frame, fg="red", text="Click me", command=hello)
-b1.pack(side="left", padx=23)
+# b2 = Button(frame, fg="red", text="Click me")
+# b2.pack(side="left", padx=23)
 
-b2 = Button(frame, fg="red", text="Click me")
-b2.pack(side="left", padx=23)
+# b3 = Button(frame, fg="red", text="Click me")
+# b3.pack(side="left", padx=23)
 
-b3 = Button(frame, fg="red", text="Click me")
-b3.pack(side="left", padx=23)
-
-b4 = Button(frame, fg="red", text="Click me")
-b4.pack(side="left", padx=23)
+# b4 = Button(frame, fg="red", text="Click me")
+# b4.pack(side="left", padx=23)
 
 # # ======================================================
 # # FRAMES
