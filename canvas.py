@@ -6,7 +6,7 @@ canvas_width = 800
 canvas_height = 400
 
 root.geometry(f"{canvas_width}x{canvas_height}")
-root.title("My GUI")
+root.title("Canvas in Tkinter")
 
 
 can_widget = Canvas(root, width=canvas_width, height=canvas_height)
