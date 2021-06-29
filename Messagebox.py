@@ -4,7 +4,7 @@ import tkinter.messagebox as tmsg
 
 root = Tk()
 root.geometry("733x566")
-root.title("Menus and Submenus")
+root.title("Message Box")
 
 
 def myfunc():
