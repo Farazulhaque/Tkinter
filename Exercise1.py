@@ -13,7 +13,7 @@ def every_100(text):
 
 
 root = Tk()
-root.title("CodeWithHarry News - Aapka Apna Akhabaar")
+root.title("Newspaper Template")
 root.geometry("1000x1000")
 
 texts = []

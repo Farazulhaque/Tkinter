@@ -3,7 +3,7 @@ import tkinter.messagebox as tmsg
 
 root = Tk()
 root.geometry("455x233")
-root.title("Radio Buttons")
+root.title("Radio Buttons in Tkinter")
 
 
 def order():

@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.geometry("455x233")
-root.title("Listbox")
+root.title("List Box in Tkinter")
 
 
 def add():

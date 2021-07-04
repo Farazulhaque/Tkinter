@@ -1,7 +1,7 @@
 from tkinter import *
 root = Tk()
 root.geometry("455x233")
-root.title("Scroll Bar")
+root.title("Scroll Bar in Tkinter")
 
 # For connecting scroll bar to a widget
 # 1. widget (yscrollcommand = scrollbar.set)
